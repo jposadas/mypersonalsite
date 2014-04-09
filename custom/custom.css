@@ -47,13 +47,13 @@ body
 
 #loader li:nth-child(1)
 {
-  -webkit-animation: laadbalk 0.6s ease-in-out infinite 0;
+  -webkit-animation: laadbalk 0.8s ease-in-out infinite 0;
 }
 #loader li:nth-child(2){
-  -webkit-animation: laadbalk 0.6s ease-in-out infinite -0.2s;
+  -webkit-animation: laadbalk 0.8s ease-in-out infinite -0.2s;
 }
 #loader li:nth-child(3){
-  -webkit-animation: laadbalk 0.6s ease-in-out infinite -0.4s;
+  -webkit-animation: laadbalk 0.8s ease-in-out infinite -0.4s;
 }
 
 
