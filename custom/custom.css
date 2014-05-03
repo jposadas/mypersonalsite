@@ -25,11 +25,20 @@ body
 }
 
 #right-panel {
-
-	background-color: white;
-	-webkit-transition: width 1s linear;
-	transition: width 1s linear;
+	background-color: #FFF;
 }
+
+#photo-div {
+	display: none;
+	margin-top: 10px;
+}
+
+#photo-div img {
+	width: 70%;
+	margin: 20px auto;
+}
+
+
 
 
 

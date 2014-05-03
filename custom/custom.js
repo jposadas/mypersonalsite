@@ -12,11 +12,16 @@ var startLayout = function() {
 		$('#right-panel').addClass('col-md-8');
 		$('#left-panel').removeClass('col-md-12');
 		$('#left-panel').addClass('col-md-4');
-		
-		
-		
-	
-	}, 1000);
+
+		setTimeout(function() {
+
+			$('#loader').hide(2000, function() {
+				$('#photo-div').show(600);
+			});
+
+		}, 1500);
+			
+	}, 1500);
 	
 
 };
