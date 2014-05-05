@@ -17,6 +17,7 @@ var startLayout = function() {
 
 			$('#loader').hide(2000, function() {
 				$('#photo-div').show(600);
+				$('#footer').show(600);
 			});
 
 		}, 1500);
