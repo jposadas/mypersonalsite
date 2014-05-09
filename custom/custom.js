@@ -1,3 +1,6 @@
+var timeOutLength = 1200;
+
+
 $(document).ready(function() {
 
 	startLayout();
@@ -20,9 +23,9 @@ var startLayout = function() {
 				$('#footer').show(600);
 			});
 
-		}, 1500);
+		}, timeOutLength);
 			
-	}, 1500);
+	}, timeOutLength);
 	
 
 };
