@@ -3,8 +3,8 @@ var timeOutLength = 1200;
 
 $(document).ready(function() {
 
-	startLayout();
-	setEvents();
+	// startLayout();
+	// setEvents();
 
 
 });
@@ -28,7 +28,6 @@ var startLayout = function() {
 			
 	}, timeOutLength);
 	
-
 };
 
 var setEvents = function() {
