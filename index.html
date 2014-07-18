@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,9 @@
     <link href="public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom/custom.css" rel="stylesheet">
 
+    <!-- Angular JS -->
+    <script src="public/angular.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,6 +21,10 @@
     <![endif]-->
   </head>
   <body>
+
+    <input ng-model="name" class="form-control" placeholder="Please enter your name ..."/>
+    <br />
+    <h1>Your name is {{name}}</h1>
 
     <ul id="loader">
       <li></li>
