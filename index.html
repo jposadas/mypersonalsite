@@ -22,9 +22,18 @@
   </head>
   <body>
 
-    <input ng-model="name" class="form-control" placeholder="Please enter your name ..."/>
-    <br />
-    <h1>Your name is {{name}}</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <input ng-model="name" class="form-control" placeholder="Please enter your name ..."/>
+        <br />
+        <h2>Your name is:</h2>
+        <h3>{{name}}</h3>
+        <p><code>powered by Angular JS</code></p>
+      </div>
+    </div>
+  </div>
+    
 
     <ul id="loader">
       <li></li>
