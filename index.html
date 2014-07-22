@@ -24,12 +24,16 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 col-sm-offset-2">
+      <div class="col-sm-4 col-sm-offset-3">
         <input ng-model="name" class="form-control" placeholder="Please enter your name ..."/>
         <br />
         <h2>Your name is:</h2>
-        <h3>{{name}}</h3>
+        <h3 class="text-success"><span ng-bind="name"></span></h3>
         <p><code>powered by Angular JS</code></p>
+      </div>
+      <div class="col-sm-4">
+        <a id="playButton" href="#" class="btn btn-success btn-lg">Play</a>
+        <a id="pauseButton" href="#" class="btn btn-info btn-lg">Pause</a>
       </div>
     </div>
   </div>
@@ -44,6 +48,9 @@
     <!-- Scripts -->
     <script src="public/jquery-2.1.0.min.js"></script>
     <script src="public/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Soundcloud API -->
+    <script src="http://connect.soundcloud.com/sdk.js"></script>
     <script src="custom/custom.js"></script>
   </body>
 </html>
