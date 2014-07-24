@@ -5,11 +5,11 @@ SC.initialize({
 });
 
 
-var rawnaldTrack;
+var track;
 
-// stream track id 3679190, Rawnald Erickson Gregory The Second
+// stream track id 5151498, Rawnald Erickson Gregory The Second
 SC.stream("/tracks/3679190", function(sound){
- 	rawnaldTrack = sound;
+ 	track = sound;
 });
 
 
@@ -18,7 +18,7 @@ SC.stream("/tracks/3679190", function(sound){
 	$('#playButton').click(function(event) {
 		
 		event.preventDefault();
-		rawnaldTrack.play();
+		track.play();
 		
 
 	});
@@ -26,7 +26,7 @@ SC.stream("/tracks/3679190", function(sound){
 	$('#pauseButton').click(function(event) { 
 
 		event.preventDefault();
-		rawnaldTrack.pause();
+		track.pause();
 
 	})
 

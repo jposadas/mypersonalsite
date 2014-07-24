@@ -1,0 +1,18 @@
+{
+
+    "tracks": [
+        {
+            "id": "3679190",
+            "name": "Rawnald Gregory Erickson the Second",
+            "artist": "STRFKR",
+            "image_url": "/public/images/strfkr.jpg"
+        },
+        {
+            "id": "5151498",
+            "name": "She Moves In Her Own Way",
+            "artist": "The Kooks",
+            "image_url": "/public/images/thekooks.jpg"
+        }
+    ]
+
+}
