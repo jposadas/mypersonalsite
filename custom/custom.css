@@ -16,7 +16,7 @@ body
 	background-color: #F9F9FA;
 }
 
-/* Navigator */
+/* NAVIGATOR */
 
 .navbar {
 	background: #004EBC;
@@ -43,8 +43,35 @@ body
 	}
 }
 
+/* WRAPPER */
 
+.bg-dark {
+	background-color: #000;
+}
+.bg-white {
+	background-color: #F9F9FA;
+}
 
+.wrapper {
+	margin-top: 65px;
+	height: 100%;
+}
+
+.wrapper .container {
+	width: 100%;
+	height: 100%;
+}
+
+.total-height {
+	height: 100%;
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		margin-top: 0;
+		margin-left: 70px;
+	}
+}
 
 /* LOADER */
 
