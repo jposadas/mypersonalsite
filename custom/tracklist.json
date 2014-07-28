@@ -2,16 +2,21 @@
 
     "tracks": [
         {
-            "id": "3679190",
+            "soundcloud_id": "3679190",
             "name": "Rawnald Gregory Erickson the Second",
             "artist": "STRFKR",
-            "image_url": "/public/images/strfkr.jpg"
+            "image_src": "/public/images/strfkr.jpg"
         },
         {
-            "id": "5151498",
+            "soundcloud_id": "5151498",
             "name": "She Moves In Her Own Way",
             "artist": "The Kooks",
-            "image_url": "/public/images/thekooks.jpg"
+            "image_src": "/public/images/the_kooks.jpg"
+        },{
+            "soundcloud_id": "137019944",
+            "name": "Hero",
+            "artist": "Family of the Year",
+            "image_src": "/public/images/family_of_the_year.jpg"
         }
     ]
 

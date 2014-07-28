@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="audioPlayerApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Juan | Posadas </title>
+    <title> Jp </title>
 
     <!-- Bootstrap -->
     <link href="public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -15,8 +15,10 @@
     <!-- Custom CSS -->
     <link href="custom/custom.css" rel="stylesheet">
 
-    <!-- Angular JS -->
+    <!-- Angular JS && Firebase-->
     <script src="public/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+    <script src="custom/controllers.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,10 +29,6 @@
   </head>
   <body>
 
-    <!-- <div class="navbar main-menu">
-      <div class="signature">Jp</div>
-    </div> -->
-
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">Jp</div>
     </div>
@@ -38,48 +36,33 @@
     <div class="wrapper">
       <div class="container">
         <div class="row total-height">
-          <div class="col-sm-6 total-height bg-white">
-
+          <div class="col-sm-6 total-height bg-white" ng-controller="TrackListCtrl">
+            <div class="track" ng-repeat="track in tracks">
+              <h4><span ng-bind="track.name"></span><span class="glyphicon glyphicon-play pull-right"></span></h4>
+              <p><span ng-bind="track.artist"></span></p>
+              <!-- <img ng-src="{{track.image_src}}" class="img-responsive img-rounded" /> -->
+            </div>
           </div>
-          <div class="col-sm-6 total-height bg-white"></div>
+          <div class="col-sm-6 total-height bg-default">
+            <ul id="loader">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div class>
-
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-sm-4 col-sm-offset-3">
-        <input ng-model="name" class="form-control" placeholder="Please enter your name ..."/>
-        <br />
-        <h2>Your name is:</h2>
-        <h3 class="text-success"><span ng-bind="name"></span></h3>
-        <p><code>powered by Angular JS</code></p>
-      </div>
-      <div class="col-sm-4">
-        <a id="playButton" href="#" class="btn btn-success btn-lg">Play</a>
-        <a id="pauseButton" href="#" class="btn btn-info btn-lg">Pause</a>
-      </div>
-    </div>
-
-
-  </div> -->
-    
-
-    <ul id="loader">
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
 
     <!-- Scripts -->
     <script src="public/jquery-2.1.0.min.js"></script>
     <script src="public/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Tracking -->
-    <script src="custom/tracking.js"></script>
-
     <!-- Soundcloud API -->
     <script src="http://connect.soundcloud.com/sdk.js"></script>
     <script src="custom/custom.js"></script>
+
+    <!-- Tracking -->
+    <script src="custom/tracking.js"></script>
   </body>
 </html>

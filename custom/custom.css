@@ -51,6 +51,9 @@ body
 .bg-white {
 	background-color: #F9F9FA;
 }
+.bg-default {
+	background-color: #FFF;
+}
 
 .wrapper {
 	margin-top: 65px;
@@ -73,11 +76,18 @@ body
 	}
 }
 
+/* TRACKLIST */
+
+.track {
+	/*border-bottom: 1px solid #bbb;*/
+	box-shadow: 0 2px 2px -2px #bbb;
+}
+
 /* LOADER */
 
 #loader
 {
-	position:fixed;
+	position:relative;
 	padding: 0;
 	top:50%;
 	left: 50%;
