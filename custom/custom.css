@@ -150,6 +150,7 @@ html, body
 	top:50%;
 	left: 50%;
 	margin-left : -21px;
+	margin-top: 10px;
 	width:45px;
 	height:60px;
   	list-style:none;
