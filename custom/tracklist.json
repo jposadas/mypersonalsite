@@ -17,6 +17,12 @@
             "name": "Hero",
             "artist": "Family of the Year",
             "image_src": "/public/images/family_of_the_year.jpg"
+        }, {
+            "soundcloud_id": "3676285",
+            "name": "Toco y Me Voy",
+            "artist": "Bersuit Vergarabat",
+            "image_src": "/public/images/bersuit.jpg"
+
         }
     ]
 

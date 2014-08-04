@@ -11,6 +11,7 @@
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
     <!-- Custom CSS -->
     <link href="custom/custom.css" rel="stylesheet">
@@ -36,14 +37,16 @@
     <div class="wrapper">
       <div class="container">
         <div class="row total-height">
-          <div class="col-sm-6 total-height bg-white" ng-controller="TrackListCtrl">
+          <div class="col-sm-4 total-height bg-default" ng-controller="TrackListCtrl">
             <div class="track" ng-repeat="track in tracks">
-              <h4><span ng-bind="track.name"></span><span class="glyphicon glyphicon-play pull-right"></span></h4>
-              <p><span ng-bind="track.artist"></span></p>
+              <h4 class="track-name" ng-click="playTrack(track)"><span ng-bind="track.name"></span></h4>
+              <p class="artist"><span ng-bind="track.artist"></span></p>
               <!-- <img ng-src="{{track.image_src}}" class="img-responsive img-rounded" /> -->
             </div>
           </div>
-          <div class="col-sm-6 total-height bg-default">
+          <div class="col-sm-8 bg-default" ng-controller="PlayTrackCtrl">
+            <!-- <h2><span ng-bind="model.selectedTrack.name"></span></h2> -->
+            <img ng-src="{{model.selectedTrack.image_src}}" class="img-responsive track-img" ng-class="{'img-border-decoration': model.isTrackSelected}"/>
             <ul id="loader">
               <li></li>
               <li></li>
