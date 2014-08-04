@@ -76,14 +76,24 @@ html, body
 
 /* TRACKLIST */
 
+@media (min-width: 768px) {
+	.track-list {
+		padding-left: 5px;
+	}
+}
+
 .track {
-	/*border-bottom: 1px solid #bbb;*/
 	box-shadow: 0 2px 2px -2px #bbb;
-	padding: 15px 0;
+	padding: 20px 0 20px 25px;
 	font-family: 'PT Serif', serif;
 }
-.track-name:hover {
+
+.track:hover {
+	background-color: #F9F9FA;
 	cursor: pointer;
+	-webkit-transition: background-color .2s linear;
+	   -moz-transition: background-color .2s linear;
+			transition: background-color .2s linear;
 }
 
 .artist {
@@ -111,7 +121,15 @@ html, body
 	-webkit-transition: border .2s linear;
 	   -moz-transition: border .2s linear;
 			transition: border .2s linear;
+}
 
+.selected-name {
+	font-family: 'Philosopher', sans-serif;
+}
+
+.selected-artist {
+	text-transform: uppercase;
+	font-size: 13px;
 }
 
 @media (min-width: 768px) {
@@ -120,8 +138,13 @@ html, body
 
 /* LOADER */
 
+.visible {
+	visibility: visible !important;
+}
+
 #loader
 {
+	visibility: hidden;
 	position:relative;
 	padding: 0;
 	top:50%;
