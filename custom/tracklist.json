@@ -5,23 +5,23 @@
             "soundcloud_id": "3679190",
             "name": "Rawnald Gregory Erickson the Second",
             "artist": "STRFKR",
-            "image_src": "/public/images/strfkr.jpg"
+            "image_src": "./public/images/strfkr.jpg"
         },
         {
             "soundcloud_id": "5151498",
             "name": "She Moves In Her Own Way",
             "artist": "The Kooks",
-            "image_src": "/public/images/the_kooks.jpg"
+            "image_src": "./public/images/the_kooks.jpg"
         },{
             "soundcloud_id": "137019944",
             "name": "Hero",
             "artist": "Family of the Year",
-            "image_src": "/public/images/family_of_the_year.jpg"
+            "image_src": "./public/images/family_of_the_year.jpg"
         }, {
             "soundcloud_id": "3676285",
             "name": "Toco y Me Voy",
             "artist": "Bersuit Vergarabat",
-            "image_src": "/public/images/bersuit.jpg"
+            "image_src": "./public/images/bersuit.jpg"
 
         }
     ]
