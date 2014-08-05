@@ -76,6 +76,10 @@ html, body
 
 /* TRACKLIST */
 
+.track-list {
+	overflow: scroll;
+}
+
 .track {
 	box-shadow: 0 2px 2px -2px #bbb;
 	padding: 20px 0 20px 25px;
@@ -100,6 +104,10 @@ html, body
 }
 
 /* PLAYER */
+
+.track-player {
+	overflow-y: hidden;
+}
 
 .track-img {
 	width: 50%;
