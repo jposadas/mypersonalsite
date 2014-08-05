@@ -13,6 +13,8 @@ audioPlayerApp.controller('TrackListCtrl', ['$scope', '$http', 'AppModel', funct
         AppModel.setIsTrackSelected(true);
     };
 
+    $scope.predicate = "name";
+
 }]);
 
 audioPlayerApp.controller('PlayTrackCtrl', ['$scope', 'AppModel', function($scope, AppModel) {

@@ -22,7 +22,36 @@
             "name": "Toco y Me Voy",
             "artist": "Bersuit Vergarabat",
             "image_src": "./public/images/bersuit.jpg"
-
+        }, {
+            "soundcloud_id": "37936427",
+            "name": "This Head I Hold",
+            "artist": "Electric Guest",
+            "image_src": "./public/images/electric_guest.jpg"
+        }, {
+            "soundcloud_id": "142466659",
+            "name": "Lisztomania",
+            "artist": "Phoenix",
+            "image_src": "./public/images/phoenix.jpg"
+        }, {
+            "soundcloud_id": "87908010",
+            "name": "This Story I Heard",
+            "artist": "Blind Pilot",
+            "image_src": "./public/images/blind_pilot.jpg"
+        }, {
+            "soundcloud_id": "95907712",
+            "name": "Ways To Go",
+            "artist": "Grouplove",
+            "image_src": "./public/images/grouplove.jpg"
+        }, {
+            "soundcloud_id": "51810721",
+            "name": "Always Where I Need To Be",
+            "artist": "The Kooks",
+            "image_src": "./public/images/the_kooks_konk.jpg"
+        }, {
+            "soundcloud_id": "13471671",
+            "name": "Pumped Up Kicks",
+            "artist": "Foster The People",
+            "image_src": "./public/images/foster_the_people.jpg"
         }
     ]
 
