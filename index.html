@@ -53,7 +53,7 @@
             <h2 class="text-center selected-name"><span ng-bind="model.selectedTrack.name"></span></h2>
             <p class="text-center selected-artist"><span ng-bind="model.selectedTrack.artist"></span></p>
 
-            <ul id="loader" ng-class="{'visible': model.isTrackSelected}">
+            <ul id="loader" ng-show="model.isTrackSelected">
               <li></li>
               <li></li>
               <li></li>

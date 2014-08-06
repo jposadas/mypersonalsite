@@ -154,13 +154,8 @@ html, body
 
 /* LOADER */
 
-.visible {
-	visibility: visible !important;
-}
-
 #loader
 {
-	visibility: hidden;
 	position:relative;
 	padding: 0;
 	top:50%;

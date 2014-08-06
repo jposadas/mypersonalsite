@@ -5,6 +5,7 @@ audioPlayerApp.controller('TrackListCtrl', ['$scope', '$http', 'AppModel', funct
 
     $http.get('custom/tracklist.json').success(function(data) {
         $scope.tracks = data.tracks;
+        //TODO: Image caching
     });
 
     $scope.playTrack = function(track) {
