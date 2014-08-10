@@ -20,8 +20,13 @@ appServices.factory('preloadImage', ['$http', function($http) {
 		var index = preloadedImages.indexOf(imgSrc);
 		if (index === -1) {
 			//Load image
+			elem.onload = function() {
+				preloadedImages.push(imgSrc);
+			};
+			elem.onerror = function() {
+				console.log("Error on image loading");
+			};
 			elem.src = imgSrc;
-			preloadedImages.push(imgSrc);
 		} else {
 			console.log('Image is already cached');
 		}
