@@ -20,8 +20,8 @@ appServices.factory('preloadImage', ['$http', function($http) {
 		var index = preloadedImages.indexOf(imgSrc);
 		if (index === -1) {
 			//Load image
-			elem.onerror = function() {
-				console.log("Error on image loading");
+			elem.onabort = function() {
+				console.log("abort on image loading");
 			};
 			elem.onload = function() {
 				preloadedImages.push(imgSrc);
