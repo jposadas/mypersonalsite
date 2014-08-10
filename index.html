@@ -42,7 +42,7 @@
         <div class="row total-height">
 
           <div class="col-sm-4 total-height bg-default track-list" ng-controller="TrackListCtrl">
-            <div class="track" ng-repeat="track in tracks | orderBy:predicate" ng-click="playTrack(track)" ng-mouseover="cacheImage(track.image_src)">
+            <div class="track" ng-repeat="track in tracks | orderBy:predicate" ng-click="playTrack(track)" ng-mouseenter="cacheImage(track.image_src)">
               <h4><span ng-bind="track.name"></span></h4>
               <p class="artist"><span ng-bind="track.artist"></span></p>
             </div>

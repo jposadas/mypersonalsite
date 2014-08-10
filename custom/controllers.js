@@ -1,7 +1,8 @@
 
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('TrackListCtrl', ['$scope', '$http', 'AppModel', function($scope, $http, AppModel) {
+appControllers.controller('TrackListCtrl', 
+    ['$scope', '$http', 'AppModel', 'preloadImage', function($scope, $http, AppModel, preloadImage) {
 
     $http.get('custom/tracklist.json').success(function(data) {
         $scope.tracks = data.tracks;
@@ -9,13 +10,12 @@ appControllers.controller('TrackListCtrl', ['$scope', '$http', 'AppModel', funct
 
     //Updating the model for now. TODO: Play the actual song
     $scope.playTrack = function(track) {
-        console.log(track);
         AppModel.setSelectedTrack(track);
         AppModel.setIsTrackSelected(true);
     };
 
     $scope.cacheImage = function(imgSrc) {
-
+        preloadImage(imgSrc);
     };
 
 
