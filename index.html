@@ -20,7 +20,9 @@
     <!-- Angular JS && Firebase-->
     <script src="public/angular.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+    <script src="custom/app.js"></script>
     <script src="custom/controllers.js"></script>
+    <script src="custom/services.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +42,7 @@
         <div class="row total-height">
 
           <div class="col-sm-4 total-height bg-default track-list" ng-controller="TrackListCtrl">
-            <div class="track" ng-repeat="track in tracks | orderBy:predicate" ng-click="playTrack(track)">
+            <div class="track" ng-repeat="track in tracks | orderBy:predicate" ng-click="playTrack(track)" ng-mouseenter="cacheImage(track.image_src)">
               <h4><span ng-bind="track.name"></span></h4>
               <p class="artist"><span ng-bind="track.artist"></span></p>
             </div>
@@ -53,7 +55,7 @@
             <h2 class="text-center selected-name"><span ng-bind="model.selectedTrack.name"></span></h2>
             <p class="text-center selected-artist"><span ng-bind="model.selectedTrack.artist"></span></p>
 
-            <ul id="loader" ng-class="{'visible': model.isTrackSelected}">
+            <ul id="loader" ng-show="model.isTrackSelected">
               <li></li>
               <li></li>
               <li></li>
@@ -70,8 +72,8 @@
     <script src="public/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Soundcloud API -->
-    <script src="http://connect.soundcloud.com/sdk.js"></script>
-    <script src="custom/custom.js"></script>
+    <!-- <script src="http://connect.soundcloud.com/sdk.js"></script> -->
+    <!-- <script src="custom/custom.js"></script> -->
 
     <!-- Tracking -->
     <script src="custom/tracking.js"></script>
