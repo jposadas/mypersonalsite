@@ -32,7 +32,6 @@ appServices.factory('playSong', ['AppModel', function(AppModel) {
 	var isPlaying = false;
 	var track, soundcloud_id;
 	return function(id) {
-		
 		if (id == soundcloud_id && isPlaying) {
 			track.pause();
 			isPlaying = false;
@@ -47,8 +46,6 @@ appServices.factory('playSong', ['AppModel', function(AppModel) {
 			track.play();
 			isPlaying = true;
 		}
-		
 		soundcloud_id = id;
-		
 	}
 }]);
