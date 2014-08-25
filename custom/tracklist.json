@@ -2,6 +2,12 @@
 
     "tracks": [
         {
+            "soundcloud_id": "8103391",
+            "name": "1901",
+            "artist": "Phoenix",
+            "image_src": "./public/images/phoenix-1901.jpg"
+        },
+        {
             "soundcloud_id": "3679190",
             "name": "Rawnald Gregory Erickson the Second",
             "artist": "STRFKR",
@@ -42,11 +48,6 @@
             "name": "Ways To Go",
             "artist": "Grouplove",
             "image_src": "./public/images/grouplove.jpg"
-        }, {
-            "soundcloud_id": "51810721",
-            "name": "Always Where I Need To Be",
-            "artist": "The Kooks",
-            "image_src": "./public/images/the_kooks_konk.jpg"
         }, {
             "soundcloud_id": "13471671",
             "name": "Pumped Up Kicks",

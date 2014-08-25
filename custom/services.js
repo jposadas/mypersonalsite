@@ -9,6 +9,7 @@ appServices.service('AppModel', ['$http', function($http) {
     };
     this.setIsTrackSelected = function(isSelected) {
         this.isTrackSelected = isSelected;
+        console.log(this.isTrackSelected);
     }
 
 }]);
@@ -25,4 +26,26 @@ appServices.factory('preloadImage', ['$http', function($http) {
 			elem.src = imgSrc;
 		}
 	};
+}]);
+
+appServices.factory('playSong', ['AppModel', function(AppModel) {
+	var isPlaying = false;
+	var track, soundcloud_id;
+	return function(id) {
+		if (id == soundcloud_id && isPlaying) {
+			track.pause();
+			isPlaying = false;
+		} else if (id != soundcloud_id) {
+			if (isPlaying) track.pause();
+			SC.stream("/tracks/" + id, function(sound){
+				track = sound;
+				track.play();
+				isPlaying = true;
+			});
+		} else {
+			track.play();
+			isPlaying = true;
+		}
+		soundcloud_id = id;
+	}
 }]);
