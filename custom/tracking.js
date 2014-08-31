@@ -1,6 +1,6 @@
 (function ($) {
 
-	var tracking = new Firebase('https://sweltering-fire-7687.firebaseio.com/tracking_test');
+	var tracking = new Firebase('https://sweltering-fire-7687.firebaseio.com/tracking');
 
 	$(document).ready(function () {
 
