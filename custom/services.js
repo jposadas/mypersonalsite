@@ -9,8 +9,8 @@ appServices.service('AppModel', ['$http', function($http) {
     };
     this.setIsTrackSelected = function(isSelected) {
         this.isTrackSelected = isSelected;
-        console.log(this.isTrackSelected);
     }
+
 
 }]);
 
@@ -28,24 +28,60 @@ appServices.factory('preloadImage', ['$http', function($http) {
 	};
 }]);
 
-appServices.factory('playSong', ['AppModel', function(AppModel) {
-	var isPlaying = false;
-	var track, soundcloud_id;
-	return function(id) {
-		if (id == soundcloud_id && isPlaying) {
-			track.pause();
-			isPlaying = false;
-		} else if (id != soundcloud_id) {
-			if (isPlaying) track.pause();
-			SC.stream("/tracks/" + id, function(sound){
-				track = sound;
-				track.play();
-				isPlaying = true;
-			});
-		} else {
-			track.play();
-			isPlaying = true;
+appServices.factory('soundcloud', ['equalizer', function(equalizer) {
+	var isTrackPlaying = false;
+	var track, soundcloud_id, lock;
+	return {
+		isTrackPlaying: function() {
+			return isTrackPlaying;
+		},
+		playTrack: function(id) {
+			if(!lock) {
+				if (id == soundcloud_id && isTrackPlaying) {
+					// console.log("option1")
+					// console.log(track);
+					// console.log(soundcloud_id);
+					if (track) {
+						track.pause();
+						isTrackPlaying = false;
+					}
+				} else if (id !== soundcloud_id) {
+					// console.log("option2")
+					// console.log(track);
+					// console.log(soundcloud_id);
+					soundcloud_id = id;
+					if (isTrackPlaying) {
+						if (track) {
+							track.pause();
+							isTrackPlaying = false;
+						}
+					}
+					lock = true;
+					SC.stream("/tracks/" + id, function(sound){
+						console.log("NEW TRACK"); 
+						console.log(sound);
+						track = sound;
+						if (track) {
+							track.play();
+							isTrackPlaying = true;
+						}
+						lock = false;
+					});
+				} else if (!isTrackPlaying) {
+					// console.log("option3")
+					// console.log(track);
+					// console.log(soundcloud_id);
+					if (track) {
+						track.play();
+						isTrackPlaying = true;
+						soundcloud_id = id;
+					}
+				}
+			}
 		}
-		soundcloud_id = id;
 	}
+}]);
+
+appServices.factory('equalizer', [function() {
+
 }]);
