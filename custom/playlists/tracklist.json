@@ -1,0 +1,69 @@
+{
+    "predicate": "name",
+    "tracks": [
+        {
+            "soundcloud_id": "8103391",
+            "name": "1901",
+            "artist": "Phoenix",
+            "image_src": "./public/images/phoenix-1901.jpg",
+            "bpm": 144
+        },
+        {
+            "soundcloud_id": "3679190",
+            "name": "Rawnald Gregory Erickson the Second",
+            "artist": "STRFKR",
+            "image_src": "./public/images/strfkr.jpg",
+            "bpm": 96
+        },
+        {
+            "soundcloud_id": "5151498",
+            "name": "She Moves In Her Own Way",
+            "artist": "The Kooks",
+            "image_src": "./public/images/the_kooks.jpg",
+            "bpm": 77
+        },{
+            "soundcloud_id": "137019944",
+            "name": "Hero",
+            "artist": "Family of the Year",
+            "image_src": "./public/images/family_of_the_year.jpg",
+            "bpm": 175
+        }, {
+            "soundcloud_id": "3676285",
+            "name": "Toco y Me Voy",
+            "artist": "Bersuit Vergarabat",
+            "image_src": "./public/images/bersuit.jpg",
+            "bpm": 180
+        }, {
+            "soundcloud_id": "37936427",
+            "name": "This Head I Hold",
+            "artist": "Electric Guest",
+            "image_src": "./public/images/electric_guest.jpg",
+            "bpm": 81
+        }, {
+            "soundcloud_id": "142466659",
+            "name": "Lisztomania",
+            "artist": "Phoenix",
+            "image_src": "./public/images/phoenix.jpg",
+            "bpm": 98
+        }, {
+            "soundcloud_id": "87908010",
+            "name": "The Story I Heard",
+            "artist": "Blind Pilot",
+            "image_src": "./public/images/blind_pilot.jpg",
+            "bpm": 96
+        }, {
+            "soundcloud_id": "95907712",
+            "name": "Ways To Go",
+            "artist": "Grouplove",
+            "image_src": "./public/images/grouplove.jpg",
+            "bpm": 101
+        }, {
+            "soundcloud_id": "13471671",
+            "name": "Pumped Up Kicks",
+            "artist": "Foster The People",
+            "image_src": "./public/images/foster_the_people.jpg",
+            "bpm": 128
+        }
+    ]
+
+}

@@ -54,8 +54,13 @@
 
             <h2 class="text-center selected-name"><span ng-bind="model.selectedTrack.name"></span></h2>
             <p class="text-center selected-artist"><span ng-bind="model.selectedTrack.artist"></span></p>
+            <div class="row" ng-if="model.selectedTrack.description">
+              <div class="col-xs-8 col-xs-offset-2">
+                <p class="text-center"><span ng-bind="model.selectedTrack.description"></span></p>
+              </div>
+            </div>
 
-            <ul id="loader" ng-cloak ng-show="soundcloud.isTrackPlaying()">
+            <ul id="loader" ng-cloak ng-if="false">
               <li></li>
               <li></li>
               <li></li>

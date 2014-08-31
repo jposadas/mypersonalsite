@@ -1,0 +1,106 @@
+{
+    "predicate": "order",
+    "tracks": [
+        {
+            "soundcloud_id": "41279447",
+            "name": "Valerie",
+            "artist": "The Zutons",
+            "description": "Well, this is the first song that I associate with you. I remember seeing you with a guitar in the couch room downstairs and thinking to myself, damn, this girl can play! And then I told you about this song, and how I wanted to learn it, and you said: 'Let's do it!'. Great times nonetheless.",
+            "image_src": "./public/images/the_zutons.jpg",
+            "order": 1,
+            "bpm": null
+        }, 
+        {
+            "soundcloud_id": "120400807",
+            "name": "California Dreaming",
+            "artist": "Mamas and Papas",
+            "description": "Great great song! Thanks for showing it to me, I loved playing it on the guitar with you. Besides never being able to say: 'Well I got down on my kneeeess!' properly, and always laughing at 'Stepped into a church'. Haha! I can't deal. Awesome times :)",
+            "image_src": "./public/images/mamas_and_papas.jpg",
+            "order": 2,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "50514183",
+            "name": "Du",
+            "artist": "Cro",
+            "description": "My all time german favorite, you know. And I think I might have failed at memorizing all the lyrics, but hey, ich spreche kein Deutsch. Aber... one of those songs that just makes me happy :) And thanks for putting up with me singing this non stop at some point!",
+            "image_src": "./public/images/cro.jpg",
+            "order": 3,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "60419819",
+            "name": "All These Things That I've Done",
+            "artist": "The Killers",
+            "description": "The only Killers song I knew haha, and you like knew all of them, so I figured you'd like me more if I played this with you, but it grew so much on me. Loved it when we attempted to harmonize the 'I've got soul but I'm not a solier' part. So many laughs and fails! I think we were playing this when we got our 50 cents from that dude at Spichernstraße!",
+            "image_src": "./public/images/the_killers.jpg",
+            "order": 4,
+            "bpm": null
+        }, {
+            "soundcloud_id": null,
+            "file": "we_come_running.mp3",
+            "name": "We Come Running",
+            "artist": "Youngblood Hawke",
+            "description": "This is the song that marked our relationship the most for me. It's that song that whenever or wherever I listen to it, there is only one person and one person only that comes to mind, and that person is ... yeah, that person is YOU! This song also marks the end of awesome times I had with you during the winter, right before leaving for Spain. I never knew that moment at the airport would be the end of incredibly awesome times with you. I wish that moment had lasted forever, and this song goes with all that for me.",
+            "image_src": "./public/images/youngblood_hawke.jpg",
+            "order": 5,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "115968187",
+            "name": "See The Sun (alt)",
+            "artist": "The Kooks",
+            "description": "First song we played together this summer. Even though it killed my fat fingers, I learned it because it is indeed really awesome, and because I had missed jamming with you!!",
+            "image_src": "./public/images/the_kooks_konk.jpg",
+            "order": 6,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "152339399",
+            "name": "West Coast",
+            "artist": "Coconut Records",
+            "description": "Though this song had other memories associated with it, missing California while being in Berlin gave it a whole new meaning. I remember sitting on my couch and you playing it and catching my attention because it was like you had read my mind. Also, the lyrics were soooo simple! One of those moments when I was like: 'This girl, Ah! :).... OK OK OK. THINK OF A NUMBER FROM 1 TO 10 ... AND PAINT IT GREEN!.... HOPE YOU DONT READ THE ANSWER FOLLOWING BEFORE GUESSING.... ... ..... ... .... (answer: The month I was born in minus the month you were born in. Did I get it right??? Ahhhh!!! maybe, or maybe not. If I got it right... I hope we can talk one day again.'",
+            "image_src": "./public/images/coconut_records.jpg",
+            "order": 8,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "53141134",
+            "name": "The Zephyr Song",
+            "artist": "Red Hot Chili Peppers",
+            "description": "Kuddos to you for showing me more RHCP. This was a non stop song for me for a couple of days, and I remember a moment when I was like: 'Can we please play it just one more time! Please!'. For some odd reason, when I listen to it, I picture you biking around some beach in LA and being free and happy. Don't know why. Is it somewhat true?",
+            "image_src": "./public/images/rhcp.jpg",
+            "order": 7,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "20683993",
+            "name": "The Adventures of Rain Dance Maggie",
+            "artist": "Red Hot Chili Peppers",
+            "description": "I remember not knowing the name of this song and having a silly guessing game to which I said no to all your guesses, one of those saturdays we had.",
+            "image_src": "./public/images/rhcp.jpg",
+            "order": 9,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "38802527",
+            "name": "Oviedo",
+            "artist": "Blind Pilot",
+            "description": "This song brings me back being on my bed also one of those short/long saturdays and you showing me this song, and me being like...Ooohhh. I remember I tried playing the song or something, and you giving me the right chords because I was lost.",
+            "image_src": "./public/images/blind_pilot.jpg",
+            "order": 10,
+            "bpm": null
+        },
+        {
+            "soundcloud_id": "137019944",
+            "name": "Hero",
+            "artist": "Family of the Year",
+            "description": "I think I started to annoy you with this song, but this song just reflects how I've felt this whole summer with you. Maybe the lyrics are ambiguous, but in an odd interpretation that I give it, it all makes sense. The music calms me down whenever I'm anxious, and it's one of those songs that also reminds me of you. Playing on your guitar in your room while Britttttttaaa was gone and finding the right capo number, guessing the wrong lyrics with you. One of those moments in the summer when I felt what I felt in the winter. Maybe my mistake was to try to always compare everything to the winter, and not to make this new time its own thing. But oh well...",
+            "image_src": "./public/images/family_of_the_year.jpg",
+            "order": 11,
+            "bpm": 175
+        }
+        
+    ]
+
+}
