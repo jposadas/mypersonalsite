@@ -28,56 +28,35 @@ appServices.factory('preloadImage', ['$http', function($http) {
 	};
 }]);
 
-appServices.factory('soundcloud', ['equalizer', function(equalizer) {
+appServices.factory('player', ['equalizer', function(equalizer) {
 	var isTrackPlaying = false;
 	var track, soundcloud_id, lock;
 	return {
 		isTrackPlaying: function() {
 			return isTrackPlaying;
 		},
-		playTrack: function(id) {
-			if(!lock) {
-				if (id == soundcloud_id && isTrackPlaying) {
-					// console.log("option1")
-					// console.log(track);
-					// console.log(soundcloud_id);
-					if (track) {
-						track.pause();
-						isTrackPlaying = false;
-					}
-				} else if (id !== soundcloud_id) {
-					// console.log("option2")
-					// console.log(track);
-					// console.log(soundcloud_id);
-					soundcloud_id = id;
-					if (isTrackPlaying) {
-						if (track) {
-							track.pause();
-							isTrackPlaying = false;
-						}
-					}
-					lock = true;
+		playTrack: function(id, src) {
+			if (!isTrackPlaying) {
+				if (id) {
 					SC.stream("/tracks/" + id, function(sound){
-						console.log("NEW TRACK"); 
-						console.log(sound);
 						track = sound;
 						if (track) {
 							track.play();
 							isTrackPlaying = true;
 						}
-						lock = false;
 					});
-				} else if (!isTrackPlaying) {
-					// console.log("option3")
-					// console.log(track);
-					// console.log(soundcloud_id);
-					if (track) {
-						track.play();
-						isTrackPlaying = true;
-						soundcloud_id = id;
-					}
+				} else {
+					track = document.createElement('audio');
+					track.setAttribute('type', 'audio/mpeg');
+					track.setAttribute('src', './public/tracks/' + src);
+					track.play();
+					isTrackPlaying = true;
 				}
 			}
+		},
+		pauseTrack: function() {
+			if (isTrackPlaying)
+				track.pause();
 		}
 	}
 }]);

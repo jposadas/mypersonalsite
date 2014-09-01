@@ -2,31 +2,29 @@
 var appControllers = angular.module('appControllers', []);
 
 appControllers.controller('TrackListCtrl', 
-    ['$scope', '$http', 'AppModel', 'preloadImage', 'soundcloud', function($scope, $http, AppModel, preloadImage, soundcloud) {
+    ['$scope', '$http', '$state', 'AppModel', 'preloadImage', 'player', function($scope, $http, $state, AppModel, preloadImage, player) {
 
-    $http.get('custom/tracklist.json').success(function(data) {
+    $http.get('custom/playlists/' +  $state.current.data.playlistFile).success(function(data) {
         $scope.tracks = data.tracks;
+        $scope.predicate = data.predicate;
     });
 
     //Updating the model for now. TODO: Play the actual song
     $scope.playTrack = function(track) {
         AppModel.setSelectedTrack(track);
         AppModel.setIsTrackSelected(true);
-        soundcloud.playTrack(track.soundcloud_id);
+        player.playTrack(track.soundcloud_id, track.file);
     };
 
     $scope.cacheImage = function(imgSrc) {
         preloadImage(imgSrc);
     };
 
-
-    $scope.predicate = "name";
-
 }]);
 
-appControllers.controller('PlayTrackCtrl', ['$scope', 'soundcloud', 'AppModel', function($scope, soundcloud, AppModel) {
+appControllers.controller('PlayTrackCtrl', ['$scope', 'player', 'AppModel', function($scope, player, AppModel) {
     $scope.model = AppModel;
-    $scope.soundcloud = soundcloud;
+    $scope.player = player;
 }]);
 
 

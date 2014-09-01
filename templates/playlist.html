@@ -1,0 +1,4 @@
+<div class="track" ng-repeat="track in tracks | orderBy:predicate" ng-click="playTrack(track)" ng-mouseenter="cacheImage(track.image_src)">
+	<h4><span ng-bind="track.name"></span></h4>
+	<p class="artist"><span ng-bind="track.artist"></span></p>
+</div>

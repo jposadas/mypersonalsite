@@ -18,7 +18,8 @@
     <link href="custom/custom.css" rel="stylesheet">
 
     <!-- Angular JS && Firebase-->
-    <script src="public/angular.min.js"></script>
+    <script src="public/angular/angular.min.js"></script>
+    <script src="public/angular/angular-ui-router.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
     <script src="custom/app.js"></script>
     <script src="custom/controllers.js"></script>
@@ -41,12 +42,8 @@
       <div class="container">
         <div class="row total-height">
 
-          <div class="col-sm-4 total-height bg-default track-list" ng-controller="TrackListCtrl">
-            <div class="track" ng-repeat="track in tracks | orderBy:predicate" ng-click="playTrack(track)" ng-mouseenter="cacheImage(track.image_src)">
-              <h4><span ng-bind="track.name"></span></h4>
-              <p class="artist"><span ng-bind="track.artist"></span></p>
-            </div>
-          </div>
+          <div ui-view class="col-sm-4 total-height bg-default track-list"></div>
+          
 
           <div class="col-sm-8 bg-default track-player" ng-controller="PlayTrackCtrl">
 
@@ -54,8 +51,13 @@
 
             <h2 class="text-center selected-name"><span ng-bind="model.selectedTrack.name"></span></h2>
             <p class="text-center selected-artist"><span ng-bind="model.selectedTrack.artist"></span></p>
+            <div class="row" ng-if="model.selectedTrack.description">
+              <div class="col-xs-8 col-xs-offset-2">
+                <p class="text-center"><span ng-bind="model.selectedTrack.description"></span></p>
+              </div>
+            </div>
 
-            <ul id="loader" ng-cloak ng-show="soundcloud.isTrackPlaying()">
+            <ul id="loader" ng-cloak ng-if="false">
               <li></li>
               <li></li>
               <li></li>
