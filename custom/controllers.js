@@ -2,9 +2,9 @@
 var appControllers = angular.module('appControllers', []);
 
 appControllers.controller('TrackListCtrl', 
-    ['$scope', '$http', 'AppModel', 'preloadImage', 'player', function($scope, $http, AppModel, preloadImage, player) {
+    ['$scope', '$http', '$state', 'AppModel', 'preloadImage', 'player', function($scope, $http, $state, AppModel, preloadImage, player) {
 
-    $http.get('custom/playlists/vivian.json').success(function(data) {
+    $http.get('custom/playlists/' +  $state.current.data.playlistFile).success(function(data) {
         $scope.tracks = data.tracks;
         $scope.predicate = data.predicate;
     });
