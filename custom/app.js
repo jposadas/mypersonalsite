@@ -21,4 +21,9 @@ audioPlayerApp.config(['$urlRouterProvider', '$stateProvider', function($urlRout
 				playlistFile: 'vivian.json'
 			}
 		});
+
+	soundManager.onready(function() {
+		console.log('Sound Manager is Ready');
+	});
+
 }]);
